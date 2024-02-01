@@ -10,9 +10,8 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #151515;
-}
+body {background-color: #151515;}
+p {color: #ffffff;}
 
 .container {
     max-width: 1110px;
@@ -76,6 +75,8 @@ body {
 
     position: relative;
     z-index: 1;
+
+    margin-bottom: 30px;
 }
 
 .product-prewiev::after {
@@ -115,3 +116,67 @@ body {
     content: url(../img/main/Vector.svg);
     padding: 0 14px 11px;
 }
+
+/* headphones-about */
+.headphones {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-bottom: 80px;
+}
+
+.headphones-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.headphones-about:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.headphones-about__text {
+    width: 540px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper::before {
+    content: url(../img/main/Rectangle.png);
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    top: 188px;
+    left: -75px;
+}
+
+.img-wrapper::after {
+    content: url(../img/main/Rectangle.png);
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    right: -75px;
+    top: 188px;
+}
+
+.headphones-about:nth-child(3) p {
+    width: 333px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.headphones-about:nth-child(3) p:nth-child(1) {
+    text-align: right;
+}
+
+.headphones-about:nth-child(3) p:nth-child(2) {
+    text-align: left;
+}
+
+
