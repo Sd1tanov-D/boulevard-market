@@ -30,9 +30,8 @@ p {color: #ffffff;}
     align-items: center;
 }
 
-.header-nav {
-    display: flex; 
-    align-items: center; 
+.navbar {
+    display: flex;
     column-gap: 30px;
 }
 
@@ -130,22 +129,96 @@ p {color: #ffffff;}
     align-items: center;
     justify-content: space-between;
     row-gap: 50px;
+    column-gap: 30px;
 }
 
 .headphones-about:nth-child(2) {
     flex-direction: row-reverse;
+    column-gap: 87px;
 }
 
-.headphones-about__text {
-    width: 540px;
+.headphones-about__text-wrapper__txt {
     font-size: 22px;
     font-weight: 500;
 }
 
-.img-wrapper {
-    position: relative;
+.headphones-about__image-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
+.headphones-about__text-wrapper,
+.headphones-about__image-wrapper {width: 50%;}
+
+.headphones-design {
+    display: flex;
+}
+
+.headphones-design__text-wrapper,
+.headphones-design__image-wrapper {
+    width: 33%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.headphones-design__text-wrapper:first-child {text-align: right; padding-right: 35px;}
+.headphones-design__text-wrapper:last-child {text-align: left; padding-left: 35px;}
+
+.headphones-design__text-wrapper__txt {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.headphones-design__image-wrapper {position: relative;}
+
+.headphones-design__image-wrapper::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    display: inline-flex;
+    width: 60px;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+.headphones-design__image-wrapper::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    display: inline-flex;
+    width: 60px;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .img-wrapper::before {
     content: url(../img/main/Rectangle.png);
     width: 60px;
@@ -164,19 +237,19 @@ p {color: #ffffff;}
     top: 188px;
 }
 
-.headphones-about:nth-child(3) p {
-    width: 333px;
+.headphones-about:nth-child(3) .text-wrapper p {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
 }
 
-.headphones-about:nth-child(3) p:nth-child(1) {
-    text-align: right;
+.headphones-about:nth-child(3) .text-wrapper {
+    width: 333px;
 }
 
-.headphones-about:nth-child(3) p:nth-child(2) {
-    text-align: left;
-}
+.headphones-about:nth-child(3) .text-wrapper:first-child .headphones-about__text {text-align: right;}
+.headphones-about:nth-child(3) .text-wrapper:last-child .headphones-about__text {text-align: left;} */
+
+
 
 
