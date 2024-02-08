@@ -152,6 +152,7 @@ p {color: #ffffff;}
 
 .headphones-design {
     display: flex;
+    justify-content: center;
 }
 
 .headphones-design__text-wrapper,
