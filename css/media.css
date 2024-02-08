@@ -84,7 +84,12 @@
     .headphones-about__image-wrapper__img {width: 350px;}
     .headphones-about__text-wrapper__txt,
     .headphones-design__text-wrapper__txt {font-size: 18px;}
+    .headphones-design__image-wrapper::before,
+    .headphones-design__image-wrapper::after {left: 57%;}
 }
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    .headphones-design__image-wrapper::before,
+    .headphones-design__image-wrapper::after {left: 58%;}
+}
 
