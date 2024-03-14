@@ -256,14 +256,24 @@ p {color: #ffffff;}
     color: #000000;
 }
 
-.footer {background-color: #282828; height: 215px; display: flex; align-items: center;}
-.footer-wrapper {display: flex; justify-content: space-between;}
-.footer-logo__wrapper {}
-.footer-logo__wrapper__img {}
+.footer {
+    background-color: #282828; 
+    height: 215px; 
+    display: flex; 
+    align-items: center;
+}
+
+.footer-wrapper {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.footer-logo__link {}
+.footer-logo__link__img {}
 .navbar__list {}
 .navbar__list__item {}
 .navbar__list__link {}
-.payment {}
+.payment {display: flex; column-gap: 30px;}
 .payment__visa {}
 .payment__mastercard {}
 
